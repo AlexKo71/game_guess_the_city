@@ -62,6 +62,10 @@ button:hover {
   display: none;
 }
 
+.choosed {
+  color: green;
+}
+
 .game_over {
   text-align: center;
   font-size: 3em;

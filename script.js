@@ -73,6 +73,7 @@ function createAbc(arrayCity) {
   document.querySelectorAll(".alphabet").forEach((item) => {
     item.addEventListener("click", () => {
       chooseLetter(item.textContent, arrayCity, emptyBlocks);
+      item.classList.add("choosed");
     });
   });
 }
@@ -81,8 +82,7 @@ function buttonShowHint(number) {
   imageHitsElement.innerHTML = "";
   showHintElement.classList.remove("hide");
   showHintElement.addEventListener("click", () => {
-    let imgBlock = `<img src=${cities[number].src} alt="view of city" width=350/>`;
-    imageHitsElement.innerHTML = imgBlock;
+    imageHitsElement.innerHTML = `<img src=${cities[number].src} alt="view of city" width=350/>`;
   });
 }
 
