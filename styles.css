@@ -1,0 +1,70 @@
+button {
+  width: 150px;
+  height: 25px;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #7fcae6;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  color: blueviolet;
+}
+
+.gameArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.score {
+  font-size: 0.6em;
+}
+
+.box,
+.boxD {
+  display: inline-block;
+  padding: 5px;
+}
+.boxE {
+  display: inline-block;
+  width: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.5em;
+}
+
+.boxE.empty {
+  border: none;
+}
+
+.boxE:hover {
+  cursor: pointer;
+  color: mediumvioletred;
+}
+
+.btn_hint {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_hint.hide {
+  display: none;
+}
+
+.game_over {
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: red;
+}

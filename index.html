@@ -1,12 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1 class="title">guess the city</h1>
+    <div class="gameArea">
+      <div class="score"></div>
+      <div class="puzzle"></div>
+      <div class="letters"></div>
+      <div class="image_hits hide"></div>
+      <button class="btn_hint hide">Show Hint</button>
+      <button class="btn_start">Start Game</button>
+      <div class="game_over"></div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
